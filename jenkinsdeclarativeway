@@ -10,7 +10,7 @@ stages{
  stage('CheckOutCode'){
  steps{
  sendSlackNotifications('STARTED')
- git branch: 'development',  credentialsId: 'd0a78a56-5e2b-485b-b9b9-3778ee4c1441', url: 'https://github.com/pri12-hub/maven-web-application.git'  
+ git branch: 'uat',  credentialsId: 'd0a78a56-5e2b-485b-b9b9-3778ee4c1441', url: 'https://github.com/pri12-hub/maven-web-application.git'  
  }
  }
  stage('Build'){
